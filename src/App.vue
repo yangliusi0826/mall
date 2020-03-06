@@ -7,11 +7,19 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+// import axios from 'axios'
 
 export default {
   name: 'App',
   components: {
     HelloWorld
+  },
+  mounted () {
+    let url = '/5e5fa191dc856429bc70dee9/example/query'
+    this.$axios.get(url).then((resp) => {
+      console.log('11111111111111')
+      console.log(resp)
+    })
   }
 }
 </script>
