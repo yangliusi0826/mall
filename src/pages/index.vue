@@ -11,6 +11,7 @@ export default {
     console.log(storage.getItem('name', 'goods'))
     // storage.clear('name', 'goods')
     // storage.clear('goods')
+    console.log(process.env)
   }
 }
 </script>
