@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import Home from './pages/home'
 import Index from './pages/index'
 
 Vue.use(Router)
@@ -10,7 +11,14 @@ export default new Router({
       {
         path: '/',
         name: 'home',
-        component: Index
+        component: Home,
+        children: [
+          {
+            path: 'index',
+            name: 'index',
+            component: Index
+          }
+        ]
       }
   ]
 })

@@ -2,7 +2,7 @@ import axios from 'axios'
 
 axios.defaults.timeout = 6000
 // axios.defaults.baseURL = process.env.VUE_APP_BACKENDDOMAIN
-axios.defaults.baseURL = "https://www.easy-mock.com/mock"
+axios.defaults.baseURL = process.env.VUE_APP_DOMAIN
 
 // 添加请求拦截器
 axios.interceptors.request.use((config = {}) => {
